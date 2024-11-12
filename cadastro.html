@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de novo usuário</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <h2>Cadastro de novo usuário</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="data-nascimento">Data de nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" class="form-control" required>
+                    <option value="">Selecione</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label><br>
+                <div class="flex">
+                    <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="Feminino" required>
+                    <label for="feminino">Feminino</label>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label>Categorias de interesse (marque mais de uma):</label><br>
+                <div class="flex">
+                    <input type="checkbox" id="praia" name="interesse" value="Praia">
+                    <label for="praia">Praia</label>
+                    <input type="checkbox" id="campo" name="interesse" value="Campo">
+                    <label for="campo">Campo</label>
+                    <input type="checkbox" id="nacionais" name="interesse" value="Nacionais">
+                    <label for="nacionais">Nacionais</label>
+                    <input type="checkbox" id="internacionais" name="interesse" value="Internacionais">
+                    <label for="internacionais">Internacionais</label>
+                    <input type="checkbox" id="serra" name="interesse" value="Serra">
+                    <label for="serra">Serra</label>
+                    <input type="checkbox" id="cidade" name="interesse" value="Cidade">
+                    <label for="cidade">Cidade</label>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="loginCadastro">Login:</label>
+                <input type="text" id="loginCadastro" name="loginCadastro" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="senhaCadastro">Senha:</label>
+                <input type="password" id="senhaCadastro" name="senhaCadastro" class="form-control" required>
+            </div>
+            <div class="form-actions flex">
+                <button type="reset" class="btn">Limpar</button>
+                <button type="submit" class="btn">Salvar</button>
+                <button type="button" class="btn" onclick="window.location.href='index.html'">Voltar para a página inicial</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

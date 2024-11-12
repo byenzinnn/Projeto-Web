@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>JFK pacotes turísticos</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Minha Agência</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+
+        <header>
+            <div class="slider">
+                <div class="slide slide-1" style="background-image: url('./assets/img/Tailandia - 2.png');"></div>
+                <div class="slide slide-2" style="background-image: url('./assets/img/AfricaSul - 2.png');"></div>
+                <div class="slide slide-3" style="background-image: url('./assets/img/Paris - 1.png');"></div>
+            </div>
+            <div class="buttons">
+                <button onclick="changeSlide(-1)">&#10094; Anterior</button>
+                <button onclick="changeSlide(1)">Próximo &#10095;</button>
+            </div>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Grecia - 1.png');"></div>
+                <button onclick="openModal('pacote1')">GRÉCIA</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Paris - 2.png');"></div>
+                <button onclick="openModal('pacote2')">PARIS</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Japao - 2.png');"></div>
+                <button onclick="openModal('pacote3')">JAPÃO</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Australia - 1.png');"></div>
+                <button onclick="openModal('pacote4')">AUSTRÁLIA</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Egito - 1.png')"></div>
+                <button onclick="openModal('pacote5')">EGITO</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Canada - 2.png');"></div>
+                <button onclick="openModal('pacote6')">CANADÁ</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Italia - 1.png');"></div>
+                <button onclick="openModal('pacote7')">ITÁLIA</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Mexico - 1.png');"></div>
+                <button onclick="openModal('pacote8')">MÉXICO</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/Tailandia - 1.png');"></div>
+                <button onclick="openModal('pacote9')">TAILÂNDIA</button>
+            </div>
+            <div class="card">
+                <div class="card-image" style="background-image: url('./assets/img/AfricaSul - 1.png');"></div>
+                <button onclick="openModal('pacote10')">AFRICA DO SUL</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+
+    </div>
+    <div id="escolhaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModalById('escolhaModal')">&times;</span>
+            <h2>Escolha uma opção</h2>
+            <div class="button-container">
+                <button class="btn" onclick="window.location.href='login.html'">Login</button>
+                <button class="btn" onclick="window.location.href='cadastro.html'">Criar conta</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="./assets/js/scripts.js"></script>
+
+</html>
